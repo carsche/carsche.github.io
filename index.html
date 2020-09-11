@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="module">
+      import { app } from "./modules.mjs"
+      app();
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <button v-on:click="start">Start</button>
+      <div id="videoSource">
+        <video
+          id="video"
+          width="640"
+          height="480"
+        >
+        </video>
+      </div>
+      <div id="result">
+        {{ result }}
+      </div>
+    </div>
+  </body>
+</html> 
